@@ -81,7 +81,3 @@ El gestor de contraseñas proporcionará **cifrado fuerte**, autenticación de d
 3️⃣ Desarrollar la interfaz de usuario y la integración con la nube.  
 4️⃣ Probar la seguridad y realizar auditorías de código.  
 5️⃣ Publicar el código en GitHub y documentar el proyecto.  
-
----
-
-🔹 **¿Te gustaría agregar alguna funcionalidad extra o tienes alguna preferencia sobre las tecnologías a usar?** 😊
