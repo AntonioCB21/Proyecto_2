@@ -42,6 +42,7 @@ El usuario solo debe definir una carpeta o archivos específicos, y el script se
   - `dropbox` → Para interactuar con **Dropbox**.
   - `schedule` → Para programar la ejecución automática.
   - `os` y `shutil` → Para manejar archivos y carpetas.
+
 - **Funcionamiento:**
   1. El usuario ejecuta el script y **configura las credenciales de acceso**.
   2. Define las carpetas y archivos a respaldar en un **archivo de configuración**.
