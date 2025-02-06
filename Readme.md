@@ -67,7 +67,6 @@ El usuario solo debe definir una carpeta o archivos específicos, y el script se
 ---
 
 ## ¿Por qué AutoBackupScript es diferente a otras alternativas?
-
 - **No requiere instalación complicada ni interfaces gráficas.**  
 - **Se ejecuta desde un simple script en Python**, pensado para usuarios que solo quieren respaldar archivos con el menor esfuerzo posible.  
 - **Elimina archivos antiguos automáticamente**, cosa que la mayoría de herramientas no hacen sin configuraciones avanzadas.  
