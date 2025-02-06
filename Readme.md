@@ -1,83 +1,72 @@
-# **Gestor de Contraseñas en la Nube (Open Source)**  
+# Proyecto: AutoBackupScript
 
-## **Descripción del Proyecto**  
-Este proyecto consiste en desarrollar un gestor de contraseñas seguro y accesible desde cualquier dispositivo mediante almacenamiento en la nube. Será un software Open Source, ofreciendo a los usuarios un sistema confiable para almacenar y gestionar sus credenciales sin depender de soluciones comerciales cerradas.  
+## 1. Descripción General
+**AutoBackupScript** es un software sencillo en **Python** que permite realizar copias de seguridad automáticas de archivos y carpetas en la nube. Se enfoca en ser una herramienta fácil de usar y de bajo mantenimiento, ideal para usuarios que necesitan hacer respaldos sin complicaciones.
 
-El gestor de contraseñas proporcionará **cifrado fuerte**, autenticación de dos factores (2FA) y sincronización segura con plataformas de almacenamiento en la nube como Google Drive, Dropbox o AWS S3.
+El usuario solo debe definir una carpeta o archivos específicos, y el script se encargará de:
 
----
-
-## **Objetivos Principales**  
-✅ **Almacenar contraseñas de forma segura** con cifrado avanzado.  
-✅ **Facilitar el acceso desde cualquier dispositivo** mediante sincronización en la nube.  
-✅ **Proteger el acceso con autenticación de dos factores (2FA)**.  
-✅ **Permitir la generación de contraseñas seguras** y únicas para cada cuenta.  
-✅ **Diseñar una interfaz intuitiva y fácil de usar** para mejorar la experiencia del usuario.  
-✅ **Mantener el código abierto** para auditoría y contribuciones de la comunidad.
+- Subir los archivos a **Google Drive** o **Dropbox**.
+- **Evitar duplicados** al comprobar si un archivo ya existe en la nube.
+- **Eliminar versiones antiguas** para evitar ocupar espacio innecesario.
+- **Ejecutarse de forma automática** a intervalos definidos.
 
 ---
 
-## **Funciones Clave**  
-
-### 1. **Almacenamiento seguro de credenciales**  
-- Base de datos cifrada con **AES-256** o **Argon2** para máxima seguridad.  
-- Opciones para almacenar credenciales en la nube o localmente.  
-
-### 2. **Integración con almacenamiento en la nube**  
-- Sincronización de credenciales con servicios como **Google Drive, Dropbox o AWS S3**.  
-- Encriptación antes de la sincronización para evitar exposición de datos en la nube.  
-
-### 3. **Autenticación de dos factores (2FA)**  
-- Soporte para **TOTP (Google Authenticator, Authy)**.  
-- Opcionalmente, integración con **llaves de seguridad FIDO2** o **biometría**.  
-
-### 4. **Generador de contraseñas seguras**  
-- Generación de contraseñas aleatorias seguras con opciones personalizables (longitud, caracteres especiales, etc.).  
-
-### 5. **Interfaz amigable y multiplataforma**  
-- Aplicación **web (React + Node.js)** y versión de escritorio con **Electron.js**.  
-- Diseño responsivo y accesible para cualquier usuario.  
-
-### 6. **Importación y exportación de contraseñas**  
-- Soporte para importar datos desde otros gestores (**CSV, JSON, KeePass, Bitwarden**).  
-- Exportación de datos cifrados con clave maestra.  
-
-### 7. **Modo offline y cifrado local**  
-- Uso sin conexión con almacenamiento en el dispositivo.  
-- Sincronización opcional cuando el usuario lo decida.  
+## 2. Objetivos del Proyecto
+- **Diseñar y desarrollar un software funcional y operativo** que realice copias de seguridad en la nube.
+- **Aplicar conceptos clave** como:
+  - **Ciclo de vida del dato:** Creación, almacenamiento y eliminación de archivos antiguos.
+  - **Seguridad:** Uso de credenciales OAuth2 para autenticación en la nube.
+  - **Almacenamiento en la nube:** Uso de API de Google Drive y Dropbox para gestionar archivos.
+- **Reflexionar sobre el impacto de las tecnologías habilitadoras digitales (THD)**, en especial en la gestión de datos en la nube.
 
 ---
 
-## **Tecnologías a Utilizar**  
-
-📌 **Frontend:** React (Next.js), Tailwind CSS para diseño.  
-📌 **Backend:** Node.js con Express, Base de datos SQLite/PostgreSQL.  
-📌 **Seguridad:** Cifrado AES-256, Autenticación JWT, Argon2 para hashing de contraseñas.  
-📌 **Almacenamiento:** Integración con API de Google Drive, Dropbox y AWS S3.  
-📌 **Versión de Escritorio:** Electron.js para compatibilidad en Windows, macOS y Linux.  
-📌 **Código Abierto:** Repositorio en GitHub con documentación detallada.  
-
----
-
-## **Casos de Uso**  
-
-🔹 **Usuarios individuales:** Guardar y acceder a sus contraseñas de forma segura desde cualquier dispositivo.  
-🔹 **Empresas pequeñas:** Compartir credenciales de equipo de manera segura y controlada.  
-🔹 **Desarrolladores y profesionales de IT:** Acceder a múltiples credenciales sin comprometer seguridad.  
+## 3. Funcionalidades del Software
+- **Copia de seguridad automática:** Se ejecuta de manera programada (por ejemplo, cada día o semana).
+- **Compatibilidad con múltiples servicios en la nube:** Inicialmente, **Google Drive y Dropbox**.
+- **Gestión inteligente de archivos:**
+  - Evita subir **archivos duplicados**.
+  - Permite configurar qué **archivos o carpetas** respaldar.
+  - **Borra copias antiguas** después de cierto tiempo (configurable).
+- **Interfaz sencilla:**
+  - Configuración fácil a través de un archivo `.ini` o `.json`.
+  - Puede ejecutarse desde la **línea de comandos** con un simple comando.
 
 ---
 
-## **Impacto y Beneficios**  
-🚀 **Alternativa Open Source a gestores comerciales** como LastPass o 1Password.  
-🔒 **Mejora de la ciberseguridad** evitando contraseñas débiles y reutilizadas.  
-📂 **Flexibilidad con almacenamiento en la nube o localmente**, según las preferencias del usuario.  
-🔗 **Posible integración con navegadores y dispositivos móviles** en futuras versiones.  
+## 4. Implementación Técnica
+- **Lenguaje:** Python
+- **Librerías:**
+  - `pydrive2` → Para interactuar con **Google Drive**.
+  - `dropbox` → Para interactuar con **Dropbox**.
+  - `schedule` → Para programar la ejecución automática.
+  - `os` y `shutil` → Para manejar archivos y carpetas.
+- **Funcionamiento:**
+  1. El usuario ejecuta el script y **configura las credenciales de acceso**.
+  2. Define las carpetas y archivos a respaldar en un **archivo de configuración**.
+  3. El script escanea los archivos y **los sube si no están en la nube**.
+  4. Se programa para ejecutarse automáticamente según la configuración del usuario.
 
 ---
 
-## **Próximos Pasos**  
-1️⃣ Diseñar la arquitectura del software.  
-2️⃣ Implementar la funcionalidad básica de almacenamiento cifrado.  
-3️⃣ Desarrollar la interfaz de usuario y la integración con la nube.  
-4️⃣ Probar la seguridad y realizar auditorías de código.  
-5️⃣ Publicar el código en GitHub y documentar el proyecto.  
+## 5. Beneficios y Diferenciación
+✔ **Simple y ligero** → No requiere instalación compleja ni interfaces gráficas.  
+✔ **Automático** → Funciona en segundo plano sin intervención manual.  
+✔ **Seguro** → Usa autenticación oficial de Google y Dropbox (**OAuth2**).  
+✔ **Open Source** → Puede ser modificado y mejorado por la comunidad.  
+
+---
+
+## 6. Ejemplo de Uso
+1. **Descargas** el script.  
+2. **Configuras** qué archivos o carpetas quieres respaldar en un archivo **JSON**.  
+3. **Ejecutas** el script o lo programas con `cron` (Linux) o **Task Scheduler** (Windows).  
+4. El script **sube los archivos** y **borra versiones antiguas** si es necesario.  
+
+## ¿Por qué AutoBackupScript es diferente?
+
+- **No requiere instalación complicada ni interfaces gráficas.**  
+- **Se ejecuta desde un simple script en Python**, pensado para usuarios que solo quieren respaldar archivos con el menor esfuerzo posible.  
+- **Elimina archivos antiguos automáticamente**, cosa que la mayoría de herramientas no hacen sin configuraciones avanzadas.  
+- **Es un proyecto Open Source minimalista**, pensado para ser modificado fácilmente.  
