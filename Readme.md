@@ -62,7 +62,9 @@ El usuario solo debe definir una carpeta o archivos específicos, y el script se
 1. **Descargas** el script.  
 2. **Configuras** qué archivos o carpetas quieres respaldar en un archivo **JSON**.  
 3. **Ejecutas** el script o lo programas con `cron` (Linux) o **Task Scheduler** (Windows).  
-4. El script **sube los archivos** y **borra versiones antiguas** si es necesario.  
+4. El script **sube los archivos** y **borra versiones antiguas** si es necesario.
+
+---
 
 ## ¿Por qué AutoBackupScript es diferente?
 
