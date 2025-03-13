@@ -1,9 +1,15 @@
 {
-    "backup_folder": "backups/",
-    "files_to_backup": ["documento1.txt", "foto.jpg"],
-    "use_google_drive": true,
-    "use_dropbox": false,
-    "dropbox_token": "TU_DROPBOX_ACCESS_TOKEN",
-    "backup_interval": 24,
-    "delete_old_backups_after_days": 7
+    "backup_folder": "backups/", // Carpeta donde se guardarán las copias de seguridad. Asegúrate de que exista o será creada automáticamente.
+    
+    "files_to_backup": ["documento1.txt", "foto.jpg"], // Lista de archivos que serán respaldados. Puedes agregar más archivos o rutas aquí.
+    
+    "use_google_drive": true, // Indica si se debe usar Google Drive para almacenar las copias de seguridad. Establece 'true' si deseas usarlo.
+    
+    "use_dropbox": false, // Indica si se debe usar Dropbox para almacenar las copias de seguridad. Establece 'true' si deseas usarlo.
+    
+    "dropbox_token": "TU_DROPBOX_ACCESS_TOKEN", // Token de acceso de Dropbox. Se debe proporcionar si 'use_dropbox' es 'true'. Cambia esto por tu token real.
+    
+    "backup_interval": 24, // Intervalo en horas para realizar la copia de seguridad automática. En este caso, cada 24 horas.
+    
+    "delete_old_backups_after_days": 7 // Número de días después de los cuales las copias de seguridad antiguas serán eliminadas. En este caso, se eliminarán después de 7 días.
 }
