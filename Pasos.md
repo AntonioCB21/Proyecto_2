@@ -5,26 +5,21 @@
 
 ## 2. Instalar dependencias necesarias
 * Abre una terminal o línea de comandos en la carpeta del proyecto y ejecuta:
-
 ```bash
 pip install pydrive2 dropbox schedule
 ```
 
 ## 3. Configurar credenciales en `config.json`
-
-Modifica el archivo `config.json` y agrega las rutas de los archivos/carpetas que deseas respaldar.  
-Si usas **Google Drive**: Debes configurar [Google Drive API](https://developers.google.com/drive) y descargar las credenciales JSON. Guía de configuración.  
-Si usas **Dropbox**: Obtén un [Access Token](https://www.dropbox.com/developers/apps/create) desde Dropbox App Console y agrégalo al archivo `config.json`.
+* Modifica el archivo `config.json` y agrega las rutas de los archivos/carpetas que deseas respaldar.  
+* Si usas **Google Drive**: Debes configurar [Google Drive API](https://developers.google.com/drive) y descargar las credenciales JSON. Guía de configuración.  
+* Si usas **Dropbox**: Obtén un [Access Token](https://www.dropbox.com/developers/apps/create) desde Dropbox App Console y agrégalo al archivo `config.json`.
 
 ## 4. Ejecutar el script de copia de seguridad
-
-Una vez configurado `config.json`, ejecuta el script:
-
+* Una vez configurado `config.json`, ejecuta el script:
 ```bash
 python auto_backup_script.py
 ```
-
-Se subirán los archivos y se eliminarán las versiones antiguas según la configuración.
+* Se subirán los archivos y se eliminarán las versiones antiguas según la configuración.
 
 ## 5. Automatizar la ejecución
 
@@ -42,7 +37,14 @@ Se subirán los archivos y se eliminarán las versiones antiguas según la confi
 0 2 * * * /usr/bin/python3 /ruta-completa/auto_backup_script.py
 ```
 
-🚨 Notas importantes
-✔ Google Drive: Debes habilitar la Google Drive API y generar credenciales JSON desde Google Cloud Console. Luego, descarga el JSON y reemplázalo en tu carpeta del proyecto.
-✔ Dropbox: Si usas Dropbox, debes generar un Access Token desde Dropbox Developer.
-✔ Verifica las credenciales: Si usas Google Drive, asegúrate de configurar correctamente la autenticación OAuth.
+## 🚨 Notas importantes
+
+### ✔ Google Drive:
+* Debes habilitar la **Google Drive API** y generar credenciales JSON desde [Google Cloud Console](https://console.cloud.google.com/). Luego, descarga el JSON y reemplázalo en tu carpeta del proyecto.
+
+### ✔ Dropbox:
+* Si usas **Dropbox**, debes generar un **Access Token** desde [Dropbox Developer](https://www.dropbox.com/developers/apps/create).
+
+### ✔ Verifica las credenciales:
+* Si usas **Google Drive**, asegúrate de configurar correctamente la autenticación **OAuth**.
+
