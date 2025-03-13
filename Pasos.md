@@ -1,20 +1,20 @@
 ✅ Pasos para probar que funciona correctamente
-Instalar Python (si no lo tienes)
+1. Instalar Python (si no lo tienes)
 
 Descarga e instala Python 3 desde python.org (Asegúrate de marcar la opción "Add Python to PATH" durante la instalación).
-Instalar dependencias necesarias
+2. Instalar dependencias necesarias
 
 Abre una terminal o línea de comandos en la carpeta del proyecto y ejecuta:
 bash
 Copiar
 Editar
 pip install pydrive2 dropbox schedule
-Configurar credenciales en config.json
+3. Configurar credenciales en config.json
 
 Modifica el archivo config.json y agrega las rutas de los archivos/carpetas que deseas respaldar.
 Si usas Google Drive: Debes configurar Google Drive API y descargar las credenciales JSON. Guía de configuración
 Si usas Dropbox: Obtén un Access Token desde Dropbox App Console y agrégalo al archivo config.json.
-Ejecutar el script de copia de seguridad
+4. Ejecutar el script de copia de seguridad
 
 Una vez configurado config.json, ejecuta el script:
 bash
@@ -22,7 +22,7 @@ Copiar
 Editar
 python auto_backup_script.py
 Se subirán los archivos y se eliminarán las versiones antiguas según la configuración.
-Automatizar la ejecución
+5. Automatizar la ejecución
 
 En Windows:
 Abre el "Programador de tareas"
