@@ -1,0 +1,9 @@
+{
+    "backup_folder": "backups/",
+    "files_to_backup": ["documento1.txt", "foto.jpg"],
+    "use_google_drive": true,
+    "use_dropbox": false,
+    "dropbox_token": "TU_DROPBOX_ACCESS_TOKEN",
+    "backup_interval": 24,
+    "delete_old_backups_after_days": 7
+}
