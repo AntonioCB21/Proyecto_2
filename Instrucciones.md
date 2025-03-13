@@ -1,14 +1,14 @@
 # AutoBackupScript
 
-## 📌 Descripción  
+## Descripción  
 AutoBackupScript es una herramienta simple en **Python** para realizar copias de seguridad automáticas de archivos en **Google Drive** y **Dropbox**. Se ejecuta en segundo plano, subiendo archivos y eliminando versiones antiguas automáticamente.  
 
-## 🚀 Requisitos  
+## Requisitos  
 - Python 3  
 - Librerías: `pydrive2`, `dropbox`, `schedule`  
 - Cuenta en Google Drive o Dropbox  
 
-## 📦 Instalación  
+## Instalación  
 1. Clona este repositorio:  
    ```bash
    git clone https://github.com/tuusuario/AutoBackupScript.git
