@@ -17,7 +17,7 @@ El ciclo de vida del dato en AutoBackupScript se gestiona de la siguiente manera
 
 ## Si no trabajas con datos, ¿cómo podrías incluir una funcionalidad que los gestione de forma eficiente?
 
-Se podría implementar una opción de **cifrado local** antes de subir los archivos a la nube, lo que aumentaría la seguridad de los datos. Además, podría agregarse una opción de **compresión** para optimizar el espacio de almacenamiento.
+- Se podría implementar una opción de **cifrado local** antes de subir los archivos a la nube, lo que aumentaría la seguridad de los datos. Además, podría agregarse una opción de **compresión** para optimizar el espacio de almacenamiento.
 
 ---
 
