@@ -67,22 +67,6 @@ Se podría implementar una opción de **cifrado local** antes de subir los archi
 
 ---
 
-# Aplicación en IT y OT
-
-## ¿Cómo mejora la integración entre IT y OT?
-
-- **Automatización** de respaldos de datos operativos y administrativos.
-- **Monitoreo en tiempo real**: Se podrían añadir alertas en caso de errores en la copia de seguridad.
-- **Centralización del almacenamiento**: Mejora la interoperabilidad entre los sistemas de IT y OT mediante la sincronización de datos clave en la nube.
-
-## ¿Qué procesos podrían mejorar con esta solución?
-
-- **Gestores de redes y sistemas**: Automatización de respaldos, evitando la intervención manual constante.
-- **Empresas de manufactura**: Respaldo automático de parámetros de máquinas y datos de sensores.
-- **Profesionales remotos y freelancers**: Respaldo sencillo de documentos importantes en la nube sin depender de servicios complejos.
-
----
-
 # Tecnologías Habilitadoras Digitales (THD)
 
 ## ¿Qué THD se han utilizado o se podrían incluir en el futuro?
@@ -97,3 +81,29 @@ Se podría implementar una opción de **cifrado local** antes de subir los archi
 - **Blockchain** para garantizar la inmutabilidad de los archivos almacenados.
 - **Computación en la Nube** para aumentar la escalabilidad y disponibilidad del servicio.
 - **Automatización Avanzada** para optimizar el uso de recursos y mejorar la eficiencia del respaldo.
+
+---
+
+# Aplicación en IT y OT
+
+## ¿Cómo puede tu software facilitar la integración entre entornos IT y OT?
+
+- **Automatización** de respaldos de datos operativos y administrativos.
+- **Monitoreo en tiempo real**: Se podrían añadir alertas en caso de errores en la copia de seguridad.
+- **Centralización del almacenamiento**: Mejora la interoperabilidad entre los sistemas de IT y OT mediante la sincronización de datos clave en la nube.
+
+## ¿Qué procesos específicos podrían beneficiarse de tu solución en términos de automatización o eficiencia?
+
+- **Gestores de redes y sistemas**: Automatización de respaldos, evitando la intervención manual constante.
+- **Empresas de manufactura**: Respaldo automático de parámetros de máquinas y datos de sensores.
+- **Profesionales remotos y freelancers**: Respaldo sencillo de documentos importantes en la nube sin depender de servicios complejos.
+
+---
+
+# Tecnologías Habilitadoras Digitales
+
+## ¿Qué tecnologías habilitadoras digitales (THD) has utilizado o podrías integrar en tu proyecto?
+
+## ¿Cómo mejoran estas tecnologías la funcionalidad o el alcance de tu software?
+
+## Si no has utilizado THD, ¿cómo podrías implementarlas para enriquecer tu solución?
