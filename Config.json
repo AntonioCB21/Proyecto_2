@@ -13,3 +13,7 @@
     
     "delete_old_backups_after_days": 7 // Número de días después de los cuales las copias de seguridad antiguas serán eliminadas. En este caso, se eliminarán después de 7 días.
 }
+
+Notas:
+Los comentarios en el archivo JSON no pueden ser utilizados directamente por el programa, pero este formato puede ser útil para quienes lean el archivo y necesiten comprender qué hace cada parámetro.
+Si estás utilizando este archivo en un código, asegúrate de eliminar los comentarios antes de cargarlo como JSON válido.
